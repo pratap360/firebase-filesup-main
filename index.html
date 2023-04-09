@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase file up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- <input type="file" id="photo">
+    <button onclick="uploadImage()">upload Image</button> -->
+
+
+
+
+
+    <div class="col l6 s12">
+        <div class="file-field input-field">
+            <div class="btn btn-wages indigo">
+                <!-- m-icon -->
+                <i class="material-icons left">folder</i>
+                <span>Seclect Photo</span>
+                <!-- main input is here  -->
+                <input name="pic" type="file" id="fileUploader">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="attach your passport size photo">
+                <span class="helper-text" data-error="wrong" data-success="right"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="center submitBtn">
+        <button class="btn-large waves-effect btn-wages indigo" id="submit" type="submit" name="submit"
+            onclick="uploadImage()">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-auth.js"></script>   -->
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
